@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "fs": "*"
+  },
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
