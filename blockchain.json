@@ -2,15 +2,5 @@
   {
     "hash": "0",
     "previousHash": null
-  },
-  {
-    "hash": "0.4736817667623008",
-    "previousHash": "0",
-    "transactions": []
-  },
-  {
-    "hash": "0.5189426686577538",
-    "previousHash": "0.4736817667623008",
-    "transactions": []
   }
 ]

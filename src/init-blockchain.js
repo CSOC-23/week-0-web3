@@ -1,8 +1,8 @@
 //start here
 
-import { writeBlockchain } from "./blockchain-helpers.js";
+const { writeBlockchain } = require("./blockchain-helpers");
 
-export const initBlockchain = () => {
+const initBlockchain = () => {
 	const genesisBlock = {
 		//add hash and previous hash property to genesisBlock
 		hash: "0",
@@ -15,5 +15,7 @@ export const initBlockchain = () => {
 
 	writeBlockchain(blockchain);
 };
+
+module.exports = { initBlockchain };
 
 initBlockchain();
