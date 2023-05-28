@@ -1,15 +1,19 @@
 //start here
 
-import { writeBlockchain } from './blockchain-helpers.js';
+import { writeBlockchain } from "./blockchain-helpers.js";
 
-const genesisBlock = {
-  //add hash and previous hash property to genesisBlock
-  hash: "0",
-  previousHash: null
-}
+export const initBlockchain = () => {
+	const genesisBlock = {
+		//add hash and previous hash property to genesisBlock
+		hash: "0",
+		previousHash: null,
+	};
 
-const blockchain = [genesisBlock];
+	const blockchain = [genesisBlock];
 
-//create a blockchain constant containing genesisBlock
+	//create a blockchain constant containing genesisBlock
 
-writeBlockchain(blockchain);
+	writeBlockchain(blockchain);
+};
+
+initBlockchain();
