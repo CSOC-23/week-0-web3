@@ -22,6 +22,4 @@ const addBlock = () => {
 	writeTransactions([]);
 };
 
-addBlock();
-
 module.exports = { addBlock };

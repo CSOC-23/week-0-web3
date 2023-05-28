@@ -8,6 +8,4 @@ const validateChain = () => {
 	}
 };
 
-validateChain();
-
 module.exports = { validateChain };

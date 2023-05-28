@@ -16,6 +16,4 @@ const addTransaction = () => {
 	writeTransactions(transactions);
 };
 
-addTransaction();
-
 module.exports = { addTransaction };

@@ -17,5 +17,3 @@ const initBlockchain = () => {
 };
 
 module.exports = { initBlockchain };
-
-initBlockchain();
