@@ -1,12 +1,7 @@
 [
-	{
-		"fromAddress": "123",
-		"toAddress": "456",
-		"amount": 789
-	},
-	{
-		"fromAddress": "123",
-		"toAddress": "456",
-		"amount": 789
-	}
+  {
+    "fromAddress": "123",
+    "toAddress": "456",
+    "amount": 789
+  }
 ]

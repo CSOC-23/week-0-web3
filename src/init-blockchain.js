@@ -12,7 +12,7 @@ const initBlockchain = () => {
 	const blockchain = [genesisBlock];
 
 	//create a blockchain constant containing genesisBlock
-
+	//refer writeBlockchain function from blockchain-helpers
 	writeBlockchain(blockchain);
 };
 

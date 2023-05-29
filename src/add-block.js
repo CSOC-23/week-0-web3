@@ -11,7 +11,7 @@ const addBlock = () => {
 	const transactions = getTransactions();
 
 	const newBlock = {
-		//creata hash, previousHash and transactions property for newBlock
+		//creat a hash, previousHash and transactions property for newBlock
 		hash: Math.random().toString(),
 		previousHash: previousBlock.hash,
 		transactions,

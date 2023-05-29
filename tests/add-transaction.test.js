@@ -7,7 +7,9 @@ test(`testing add-transaction`, () => {
 	const transactions = JSON.parse(fs.readFileSync("./transactions.json"));
 	const addedTransaction = transactions[transactions.length - 1];
 
-	expect(addedTransaction.fromAddress).toBe("123");
-	expect(addedTransaction.toAddress).toBe("456");
-	expect(addedTransaction.amount).toBe(789);
+	expect(addedTransaction).toMatchObject({
+        "fromAddress": "123",
+        "toAddress": "456",
+        "amount": 789
+      })
 });
