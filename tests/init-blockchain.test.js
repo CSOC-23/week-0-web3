@@ -1,7 +1,7 @@
 const { initBlockchain } = require("../src/init-blockchain.js");
 const { readFileSync } = require("fs");
 
-test(`should correctly initialise a blockchain`, () => {
+test(`correctly initialised a blockchain`, () => {
 	initBlockchain();
 	const blockchain = JSON.parse(readFileSync("./blockchain.json"));
 

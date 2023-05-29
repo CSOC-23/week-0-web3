@@ -3,7 +3,8 @@
 		"fs": "*"
 	},
 	"devDependencies": {
-		"jest": "^29.5.0"
+		"jest": "^29.5.0",
+		"jest-html-reporters": "^3.1.4"
 	},
 	"scripts": {
 		"test": "jest"
