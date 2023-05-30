@@ -1,13 +1,12 @@
-//start here
+// Start here
 
 const { writeBlockchain } = require("./blockchain-helpers");
 
 const initBlockchain = () => {
-	//create a genesisBlock and add appropriate hash and previous hash property to genesisBlock
+	// Create a genesisBlock and add appropriate hash and previous hash property to genesisBlock
 
-
-	//create a blockchain constant containing genesisBlock
-	//refer writeBlockchain function from blockchain-helpers
+	// Create a blockchain constant containing genesisBlock
+	// Refer writeBlockchain function from blockchain-helpers
 	writeBlockchain(blockchain);
 };
 

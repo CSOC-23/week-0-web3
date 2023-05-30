@@ -1,4 +1,4 @@
-//read the docs to know about fs library https://node.readthedocs.io/en/latest/api/fs/
+// Read the docs to know about fs library https://node.readthedocs.io/en/latest/api/fs/
 const { writeFileSync, readFileSync } = require("fs");
 
 function writeBlockchain(blockchain) {
@@ -12,9 +12,7 @@ function getBlockchain() {
 	return blockchain;
 }
 
-
-
-//transaction go here
+// Transactions go here
 function writeTransactions(transactions) {
 	const transactionsString = JSON.stringify(transactions, null, 2);
 	writeFileSync("./transactions.json", transactionsString);
@@ -30,5 +28,5 @@ module.exports = {
 	writeBlockchain,
 	getBlockchain,
 	getTransactions,
-	writeTransactions
+	writeTransactions,
 };

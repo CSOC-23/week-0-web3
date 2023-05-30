@@ -10,7 +10,7 @@ const addBlock = () => {
 	const previousBlock = blockchain[blockchain.length - 1];
 	const transactions = getTransactions();
 
-	//create a hash, previousHash and transactions property for newBlock and push that into blockchain
+	// Create a hash, previousHash and transactions property for newBlock and push that into blockchain
 
 	blockchain.push();
 	writeBlockchain(blockchain);

@@ -8,8 +8,8 @@ test(`testing add-transaction`, () => {
 	const addedTransaction = transactions[transactions.length - 1];
 
 	expect(addedTransaction).toMatchObject({
-        "fromAddress": "123",
-        "toAddress": "456",
-        "amount": 789
-      })
+		fromAddress: "123",
+		toAddress: "456",
+		amount: 789,
+	});
 });

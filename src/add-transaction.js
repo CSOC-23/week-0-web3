@@ -5,8 +5,8 @@ const addTransaction = () => {
 	const toAddress = process.argv[3];
 	const amount = parseInt(process.argv[4]);
 
-	//create newTransactions and push them into transactions.json containing the above properties
-	//refer blockchain-helpers.js for writeTransactions and getTransactions
+	// Xreate new transactions and push them into transactions.json containing the above properties
+	// Refer blockchain-helpers.js for writeTransactions and getTransactions
 
 	const transactions = getTransactions();
 	transactions.push();
