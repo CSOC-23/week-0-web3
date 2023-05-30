@@ -1,14 +1,14 @@
 {
-"reporters": [
-    "default",
-    [
-        "jest-html-reporters",
-        {
-            "filename": "index.html",
-            "pageTitle": "JS Assignments",
-            "openReport": true,
-            "hideIcon": true
-        }
-    ]
-]
+	"reporters": [
+		"default",
+		[
+			"jest-html-reporters",
+			{
+				"filename": "index.html",
+				"pageTitle": "Web 3 - Week 0",
+				"openReport": true,
+				"hideIcon": true
+			}
+		]
+	]
 }
