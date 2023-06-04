@@ -12,7 +12,7 @@ const addBlock = () => {
 
 	// Create a hash, previousHash and transactions property for newBlock and push that into blockchain
 	const newBlock={
-		hash: undefined,
+		hash: ""+Math.random(),
 		previousHash: previousBlock.hash,
 		transactions,
 	}

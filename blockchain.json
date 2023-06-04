@@ -2,5 +2,16 @@
   {
     "hash": "0",
     "previousHash": null
+  },
+  {
+    "hash": "0.7606608761606808",
+    "previousHash": "0",
+    "transactions": [
+      {
+        "fromAddress": "123",
+        "toAddress": "456",
+        "amount": 789
+      }
+    ]
   }
 ]
