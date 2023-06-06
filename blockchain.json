@@ -1,6 +1,9 @@
 [
   {
+    "index": 0,
+    "timestamp": 1686066693618,
     "hash": "0",
-    "previousHash": null
+    "previousHash": null,
+    "transactions": []
   }
 ]
