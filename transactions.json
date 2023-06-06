@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "fromAddress": "123",
+    "toAddress": "456",
+    "amount": 789
+  }
+]

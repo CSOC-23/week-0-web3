@@ -1,3 +1,4 @@
+const { SHA256 } = require("crypto-js");
 const {
 	getBlockchain,
 	writeBlockchain,
@@ -10,9 +11,20 @@ const addBlock = () => {
 	const previousBlock = blockchain[blockchain.length - 1];
 	const transactions = getTransactions();
 
-	// Create a hash, previousHash and transactions property for newBlock and push that into blockchain
+	calculateHash = (block) => {
+		return SHA256(JSON.stringify(block));
+	}
 
-	blockchain.push();
+	// Create a hash, previousHash and transactions property for newBlock and push that into blockchain
+	const newBlock = {
+		index : previousBlock.index + 1,
+		timestamp : Date.now(),
+		previousHash : previousBlock.hash,
+		hash : calculateHash(transactions),
+		transactions : transactions
+	}
+
+	blockchain.push(newBlock);
 	writeBlockchain(blockchain);
 	writeTransactions([]);
 };
