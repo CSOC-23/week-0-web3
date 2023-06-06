@@ -9,7 +9,11 @@ const addTransaction = () => {
 	// Refer blockchain-helpers.js for writeTransactions and getTransactions
 
 	const transactions = getTransactions();
-	transactions.push();
+	transactions.push({
+		fromAddress,
+		toAddress,
+		amount,
+	});
 	writeTransactions(transactions);
 };
 
