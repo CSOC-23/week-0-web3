@@ -11,8 +11,16 @@ const addBlock = () => {
 	const transactions = getTransactions();
 
 	// Create a hash, previousHash and transactions property for newBlock and push that into blockchain
-
-	blockchain.push();
+	const newBlock={
+		previousHash: previousBlock.hash,
+		hash:previousBlock.hash+20,
+		transactions:[{
+			fromAddress: "123",
+			toAddress: "456",
+			amount: 789,
+		}],
+	};
+	blockchain.push(newBlock);
 	writeBlockchain(blockchain);
 	writeTransactions([]);
 };
