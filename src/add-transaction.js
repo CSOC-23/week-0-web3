@@ -7,9 +7,13 @@ const addTransaction = () => {
 
 	// Xreate new transactions and push them into transactions.json containing the above properties
 	// Refer blockchain-helpers.js for writeTransactions and getTransactions
-
+	const newTransaction ={
+		fromAddress: "123",
+		toAddress: "456",
+		amount: 789,
+	};
 	const transactions = getTransactions();
-	transactions.push();
+	transactions.push(newTransaction);
 	writeTransactions(transactions);
 };
 
