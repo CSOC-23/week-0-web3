@@ -1,6 +1,17 @@
 [
   {
-    "hash": "0",
-    "previousHash": null
+    "previousHash": null,
+    "hash": "0"
+  },
+  {
+    "previousHash": "0",
+    "hash": "01000",
+    "transactions": [
+      {
+        "fromAddress": "123",
+        "toAddress": "456",
+        "amount": 789
+      }
+    ]
   }
 ]
