@@ -4,12 +4,17 @@ const addTransaction = () => {
 	const fromAddress = process.argv[2];
 	const toAddress = process.argv[3];
 	const amount = parseInt(process.argv[4]);
+    const newTransaction={
+		fromAddress:fromAddress,
+		toAddress:toAddress,
+		amount:amount,
+	}
 
 	// Xreate new transactions and push them into transactions.json containing the above properties
 	// Refer blockchain-helpers.js for writeTransactions and getTransactions
 
 	const transactions = getTransactions();
-	transactions.push();
+	transactions.push(newTransaction);
 	writeTransactions(transactions);
 };
 
